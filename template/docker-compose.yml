@@ -1,0 +1,26 @@
+version: "3"
+services:
+    api-gateway:
+        build: ./api-gateway
+        container_name: api-gateway
+        ports:
+            - "5000:7000"
+        networks:
+            - "flamingo-network"
+    customer-service:
+        build: ./customer-service
+        container_name: customer-service
+        networks:
+            - "flamingo-network"
+    customer-db:
+        image: postgres
+        container_name: customer-db
+        networks:
+            - "flamingo-network"
+        environment:
+            - POSTGRES_PASSWORD=Abc.12345
+            - POSTGRES_USER=customer_db
+
+networks:
+    flamingo-network:
+        driver: bridge
