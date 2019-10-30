@@ -3,6 +3,8 @@ FROM python:3.7
 # Create app directory
 WORKDIR /app
 
+ENV PYTHON_ENV=production
+
 # Install app dependencies
 COPY ./requirements.txt ./
 

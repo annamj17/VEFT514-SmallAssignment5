@@ -82,5 +82,4 @@ channel.basic_consume(customer_email_queue_name,
                       send_customer_email)
 
 channel.start_consuming()
-# connection.close()
-channel.close()
+connection.close()

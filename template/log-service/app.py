@@ -18,7 +18,6 @@ def connect_to_mb():
             return channel
         except:
             sleep(5)
-            error = True
             continue
 
 channel = connect_to_mb()
@@ -65,5 +64,4 @@ channel.basic_consume(order_log_queue_name, order_create_event)
 channel.basic_consume(customer_log_queue_name, customer_create_event)
 
 channel.start_consuming()
-# connection.close()
-channel.close()
+connection.close()
