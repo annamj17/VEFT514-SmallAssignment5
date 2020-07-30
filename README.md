@@ -2,8 +2,8 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+* [Docker-compose file](#docker-compose)
+* [Other](#other)
 
 ## General info
 Create a microservice structure with docker containers.
