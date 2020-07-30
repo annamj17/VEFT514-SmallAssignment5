@@ -1,11 +1,17 @@
 # VEFT514-SmallAssignment5
 
-### Til að nota docker-compose fileinn
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
+## General info
+Create a microservice structure with docker containers.
+		
+## To be able to use the docker-compose file
 docker-compose up
 
-### Annað
-
+## Other
 To remove all stopped containers, all dangling images, and all unused networks:
 
 ```
